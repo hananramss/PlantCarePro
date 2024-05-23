@@ -1,0 +1,86 @@
+.calendar-updates {
+    // max-width: 800px;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    h2 {
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    p {
+        margin-bottom: 20px;
+        color: #666;
+    }
+
+    .calendar-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        .react-calendar {
+            border: none;
+            width: 100%;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+            .react-calendar__tile--active {
+                background: #4b6d52 !important;
+                color: #fff !important;
+            }
+        }
+
+        .watered {
+            background: #c6e6d7 !important;
+            color: #4b6d52 !important;
+        }
+    }
+
+    .table-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        overflow-x: auto;
+
+        h2 {
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+
+            thead {
+                background-color: #4b6d52;
+                color: #fff;
+
+                th {
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
+
+            tbody {
+                tr {
+                    text-align: center;
+                    &:nth-child(even) {
+                        background-color: #f2f2f2;
+                    }
+
+                    td {
+                        padding: 10px;
+                        border: 1px solid #ddd;
+                    }
+                }
+            }
+        }
+    }
+}

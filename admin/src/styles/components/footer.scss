@@ -1,0 +1,17 @@
+@import "../main/variables.scss";
+
+.footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+    border-top: 2px solid $soft-bg;
+    padding: 10px 30px;
+
+    .links{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+}

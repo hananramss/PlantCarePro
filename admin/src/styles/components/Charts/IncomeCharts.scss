@@ -1,0 +1,40 @@
+@import "../../main/variables.scss";
+@import "../../responsive.scss";
+
+
+.incomeChart{
+    .title-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 2rem;
+    }
+    .title{
+        font-weight: bold;
+        font-size: 18px;
+        margin-bottom: 20px;
+
+        @include md {
+            .title {
+                font-size: 16px;
+            }
+        }
+
+    }
+    .amount{
+        // text-align: end;
+        font-size: 15px;
+        padding-right: 2rem;
+        line-height: 1.5rem;
+
+        
+        @include md {
+            .amount {
+                font-size: 16px;
+            }
+        }
+    }
+    .bar{
+        margin-top: 1rem;
+    }
+}
